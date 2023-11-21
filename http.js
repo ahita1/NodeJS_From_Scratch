@@ -1,6 +1,7 @@
 const http = require('http')
 
-
+console.log(__filename);
+console.log(__dirname);
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
         res.write("hello worlds haha")
